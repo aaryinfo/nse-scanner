@@ -1,0 +1,138 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                 NSE REAL-TIME SCANNER v2 - START HERE                      ║
+║                       (213 Stocks, Locked Entries)                         ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+WHAT YOU HAVE
+═════════════
+✅ Complete real-time NSE scanner (213 F&O stocks)
+✅ 3 strategies: ORB, VWAP, NR7
+✅ Real data from TradingView + yfinance
+✅ Locked entry prices (don't change with LTP)
+✅ Professional dark UI with real-time updates
+✅ Ready to deploy on GitHub + Render (FREE)
+
+FILES TO USE
+════════════
+Core (REQUIRED):
+  • server_v2.py      ← Backend (Flask, real data)
+  • index.html        ← Frontend (Web UI)
+  • requirements.txt  ← Python packages
+  • Procfile          ← Cloud config
+
+Setup Guides (READ):
+  • QUICK_START.md           ← Local setup in 3 minutes
+  • GITHUB_DEPLOYMENT.md     ← GitHub + Render deployment
+  • README.md                ← Full documentation
+  • FILES_SUMMARY.md         ← This overview
+
+QUICK START (3 MINUTES)
+═══════════════════════
+
+1. Install Python packages:
+   pip install -r requirements.txt
+
+2. Run server:
+   python server_v2.py
+
+3. Open browser:
+   http://localhost:5000
+
+DONE! You have a live NSE scanner running.
+
+WHAT IT SHOWS
+═════════════
+✓ 213 NSE F&O stocks scanned in real-time
+✓ BUY/SELL/NEUTRAL signals from ORB, VWAP, NR7
+✓ Entry/SL/Target with 1:2 Risk:Reward
+✓ Live ticker (Nifty, BankNifty, Sensex, Gold, Crude)
+✓ Technical indicators (RSI, EMA, VWAP, ATR)
+✓ Filter by signal or strategy
+✓ Click any stock for full analysis
+
+DEPLOY TO CLOUD (10 MINUTES)
+════════════════════════════
+
+1. Create GitHub repo: https://github.com/new
+   Name: nse-scanner
+
+2. Upload files:
+   git clone https://github.com/YOUR_USERNAME/nse-scanner.git
+   cd nse-scanner
+   # Copy server_v2.py, index.html, requirements.txt, Procfile, .gitignore
+   git add .
+   git commit -m "NSE scanner v2"
+   git push origin main
+
+3. Deploy on Render (FREE):
+   • Go to https://render.com
+   • Click "New +" → "Web Service"
+   • Connect GitHub repo
+   • Name: nse-scanner
+   • Build: pip install -r requirements.txt
+   • Start: python server_v2.py
+   • Click "Create Web Service"
+
+DONE! Your scanner is live at:
+https://nse-scanner.onrender.com
+
+(Or whatever you named it on Render)
+
+KEY FEATURES
+════════════
+✅ 213 Stocks       — Complete NSE F&O universe
+✅ Real Data        — TradingView (live) + yfinance (intraday)
+✅ Locked Entries   — Entry doesn't change when LTP changes
+✅ 3 Strategies     — ORB, VWAP, NR7 (institutional proven)
+✅ 1:2 R:R         — Professional risk management
+✅ Free             — No paid APIs, no subscription
+✅ Fast             — 213 stocks scanned in <5 seconds
+✅ Auto-refresh     — Updates every 60 seconds
+
+TROUBLESHOOTING
+═══════════════
+Q: "Module not found" error?
+A: pip install flask flask-cors yfinance pandas numpy requests
+
+Q: Port 5000 already in use?
+A: pkill -f "python server"
+
+Q: Only 88 stocks showing?
+A: Make sure you're using server_v2.py, not old server.py
+
+Q: TradingView data blocked?
+A: Works fine on Render. On local, yfinance fallback works.
+
+See GITHUB_DEPLOYMENT.md for detailed troubleshooting.
+
+WHAT'S DIFFERENT (v2)
+═════════════════════
+❌ OLD (v1): 88 stocks, entry price changed with LTP
+✅ NEW (v2): 213 stocks, entry price locked at signal time
+
+IMPORTANT
+═════════
+⚠️  Trading involves risk. These signals are educational.
+⚠️  Always use stop losses. Never risk >2% per trade.
+⚠️  Paper trade first. Past ≠ future.
+
+DATA SOURCES
+════════════
+TradingView: Real-time LTP, VWAP, RSI, EMA, ATR (fast)
+yfinance:    5-min candles for ORB, VWAP, NR7 detection
+
+NEED HELP?
+══════════
+1. Read QUICK_START.md (local setup)
+2. Read GITHUB_DEPLOYMENT.md (GitHub + Render)
+3. Read README.md (full documentation)
+4. Check TROUBLESHOOTING in GITHUB_DEPLOYMENT.md
+
+GET STARTED NOW
+═══════════════
+→ Run: python server_v2.py
+→ Open: http://localhost:5000
+
+Enjoy! 🚀
+
+Questions? See README.md or GITHUB_DEPLOYMENT.md
